@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>edu.escuelaing.arem.ASE.app</groupId>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.0.1</version>
+        <configuration>
+          <doctitle>My API for ${Tarea1MVNGit} ${1.0}</doctitle> <!-- Used by javadoc:javadoc goal -->
+          <windowtitle>My API for ${Tarea1MVNGit} ${1.0}</windowtitle> <!-- Used by javadoc:javadoc goal --> 
+          <testDoctitle>My Test API for ${${Tarea1MVNGit}} ${1.0}</testDoctitle> <!-- Used by javadoc:test-javadoc goal -->
+          <testWindowtitle>My Test API for ${${Tarea1MVNGit}} ${1.0}</testWindowtitle> <!-- Used by javadoc:test-javadoc goal -->
+          ...
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <artifactId>TareaMVNGIT</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>TareaMVNGIT</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
